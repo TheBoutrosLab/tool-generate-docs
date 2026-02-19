@@ -1,6 +1,6 @@
 # Build and Deploy Pipeline Documentation
 
-This Github Action builds a documentation website and deploys it to [GitHub Pages](https://pages.github.com/) for the UCLAHS-CDS pipelines using [MKDocs](https://www.mkdocs.org/).
+This Github Action builds a documentation website and deploys it to [GitHub Pages](https://pages.github.com/) for the TheBoutrosLab pipelines using [MKDocs](https://www.mkdocs.org/).
 
 The pipeline's README.md is split into individual pages based on [level 2 headings](https://www.markdownguide.org/basic-syntax/#headings). A MkDocs config yaml file can also be used to specify specific parameters including additional documentation. Documentation must be written in Markdown syntax.
 
@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: uclahs-cds/tool-generate-docs@v1
+      - uses: theboutroslab/tool-generate-docs@v1
 ```
 
 ## Parameters
@@ -51,7 +51,7 @@ options:
 The script generates all documentation locally and serves it at <http://localhost:8000> for review. It then waits for user approval before pushing anything to GitHub.
 
 ```console
-$ ./internal-action/backfill.py git@github.com:uclahs-cds/user-nwiltsie.git
+$ ./internal-action/backfill.py git@github.com:theboutroslab/user-nwiltsie.git
 Cloning repository into /var/folders/q5/pzb2r_1s01l6gvysk3cglxm4wpvxcb/T/tmpldl3gdxr ...
 Generating docs for tag `v1.0.1`
 Generating docs for tag `v1.0.2-rc.1`
@@ -65,11 +65,11 @@ Push these docs live [yes/no]?
 
 ## License
 
-Author: Nicholas Wiltsie, Chenghao Zhu
+Author: Nicholas Wiltsie, Chenghao Zhu, Yash Patel
 
 tool-generate-docs is licensed under the GNU General Public License version 2. See the file LICENSE.md for the terms of the GNU GPL license.
 
-Copyright (C) 2024 University of California Los Angeles ("Boutros Lab") All rights reserved.
+Copyright (C) 2026 Sanford Burnham Prebys Medical Discovery Institute ("Boutros Lab") All rights reserved.
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
