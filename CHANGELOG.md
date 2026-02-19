@@ -7,6 +7,13 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [Unreleased]
+
+### Changed
+- Use `TheBoutrosLab` static analysis
+
+---
+
 ## [v1.0.0]
 
 ### Added

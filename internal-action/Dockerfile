@@ -7,4 +7,4 @@ RUN python -m pip install --no-cache-dir -r /src/requirements.txt && \
 
 ENTRYPOINT ["/src/action.py"]
 
-LABEL maintainer="Nicholas Wiltsie, nwiltsie@mednet.ucla.com"
+LABEL maintainer="Yash Patel, ypatel@sbpdiscovery.org"
